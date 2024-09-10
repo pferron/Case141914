@@ -1,0 +1,44 @@
+name: gandalf
+channels:
+  - conda-forge
+  - conda-shared
+  - conda-main
+  - conda-r
+dependencies:
+  - python=3.9
+  - pip:
+      - --index-url https://artifactory.cloud.capitalone.com/artifactory/api/pypi/pypi-python-org/simple
+      - --extra-index-url https://artifactory.cloud.capitalone.com/artifactory/api/pypi/pypi-internalfacing/simple
+      - dask==2022.9.0
+      - fastavro==1.8.2
+      - jsonschema==3.2.0
+      - llvmlite==0.40.1
+      - markupsafe==2.1.3
+      - numba==0.57.1
+      - numpy==1.23.2
+      - pandas==1.4.4
+      - patsy==0.5.1
+      - psycopg2==2.9.7
+      - pyarrow==14.0.1
+      - PyYAML==5.4.1
+      - pytest==7.4.0
+      - pytest-cov==4.1.0
+      - pytest-pylint==0.19.0
+      - pytest-json==0.4.0
+      - scikit-learn==1.1.2
+      - scipy==1.9.1
+      - snowflake-connector-python==3.5.0
+      - c1-dataioutils[snowflake]==2.0.2
+      - c1-ottofox==0.5.3
+      - c1-onelake==1.0.23
+      - c1-olfs==0.2.1
+      - glom==23.3.0
+      - c1-brodeur==0.4.3
+      - datacompy==0.10.3
+      - c1-camparo==1.5.9
+      - c1-ar1==1.0.4
+      - c1-modelserving-utils==2023.3.13
+      - pylint==2.17.7
+      - c1-joy==0.12.5
+      - c1-wiyd==1.3.7
+      - fsspec==2023.10.0
